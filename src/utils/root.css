@@ -1,0 +1,5 @@
+.root {
+  font-family: 'Inter', 'Arial', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--primary-text-color);
+}
