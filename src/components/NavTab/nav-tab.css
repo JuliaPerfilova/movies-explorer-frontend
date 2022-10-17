@@ -1,0 +1,8 @@
+.nav-tab {
+  width: 100%;
+  min-height: 66px;
+  background-color: var(--primary-variant-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

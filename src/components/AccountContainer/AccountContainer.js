@@ -1,34 +1,25 @@
-import CustomLink from "../CustomLink/CustomLink";
-import {useState} from "react";
+import ClickableElement from "../ClickableElement/ClickableElement";
+import {LINK_TYPES} from "../../utils/Constants";
 
-function AccountContainer() {
-  // temp
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const handleSignIn = () => {
-    setIsLoggedIn(!isLoggedIn);
-  }
+function AccountContainer({isLoggedIn, handleSignIn, handleSignOut}) {
 
   return (
     <div className='account-container'>
-      {!isLoggedIn && <CustomLink
+      {!isLoggedIn && <ClickableElement
         to='/signup'
-        type='text'
+        type={LINK_TYPES.LINK}
         className='account-container__item'>
         Регистрация
-      </CustomLink>}
-      <CustomLink
-        to={ isLoggedIn ? '/' : '/movies'}
-        type='button'
-        className='account-container__item'>
-        <button
-          onClick={handleSignIn}
-          className={`account-container__button ${isLoggedIn ?
-            'account-container__button_type_profile' :
-            'account-container__button_type_login'}`
-          }>{`${isLoggedIn ? 'Аккаунт' : 'Войти'}`}
-        </button>
-      </CustomLink>
+      </ClickableElement>}
+      <ClickableElement
+        type={LINK_TYPES.BUTTON}
+        className={`account-container__button ${isLoggedIn ?
+          'account-container__button_type_profile' :
+          'account-container__button_type_login'}`
+        }
+        buttonClick={isLoggedIn ? handleSignOut : handleSignIn}>
+        {`${isLoggedIn ? 'Аккаунт' : 'Войти'}`}
+      </ClickableElement>
     </div>
   );
 }

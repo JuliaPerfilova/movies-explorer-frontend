@@ -1,0 +1,10 @@
+.portfolio__item-name {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: -0.04em;
+  color: var(--primary-text-color);
+  margin: 0;
+}

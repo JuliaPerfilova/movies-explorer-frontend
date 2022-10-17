@@ -1,0 +1,9 @@
+.portfolio__item-link {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: -0.04em;
+  color: var(--primary-text-color);
+}

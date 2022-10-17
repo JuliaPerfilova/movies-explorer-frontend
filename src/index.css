@@ -7,9 +7,9 @@
 
 @import url(./components/Logo/logo.css);
 
-@import url(components/CustomLink/custom-link.css);
-@import url(components/CustomLink/_type/custom-link_type_button.css);
-@import url(components/CustomLink/_type/custom-link_type_text.css);
+@import url(components/ClickableElement/clickable-element.css);
+@import url(components/ClickableElement/_type/clickable-element_type_button.css);
+@import url(components/ClickableElement/_type/clickable-element_type_link.css);
 
 @import url(./components/Header/header.css);
 
@@ -27,3 +27,64 @@
 
 @import url(./components/Promo/promo.css);
 @import url(./components/Promo/__title/promo__title.css);
+
+@import url(./components/NavTab/nav-tab.css);
+@import url(./components/NavTab/__list/nav-tab__list.css);
+@import url(./components/NavTab/__item/nav-tab__item.css);
+
+@import url(./components/AboutProject/about-project.css);
+@import url(./components/AboutProject/__title/about-project__title.css);
+@import url(./components/AboutProject/__descriptions/about-project__descriptions.css);
+@import url(./components/AboutProject/__description/about-project__description.css);
+@import url(./components/AboutProject/__description-title/about-project__description-title.css);
+@import url(./components/AboutProject/__description-text/about-project__description-text.css);
+@import url(./components/AboutProject/__grid/about-project__grid.css);
+@import url(./components/AboutProject/__grid-item/about-project__grid-item.css);
+@import url(./components/AboutProject/__grid-item/_background/about-project__grid-item_background_green.css);
+@import url(./components/AboutProject/__grid-item/_background/about-project__grid-item_background_grey.css);
+@import url(./components/AboutProject/__grid-item/_background/about-project__grid-item_background_transparent.css);
+
+@import url(./components/Techs/techs.css);
+@import url(./components/Techs/__title/techs__title.css);
+@import url(./components/Techs/__subtitle/techs__subtitle.css);
+@import url(./components/Techs/__text/techs__text.css);
+@import url(./components/Techs/__list/techs__list.css);
+@import url(./components/Techs/__list-item/techs__list-item.css);
+
+@import url(./components/AboutMe/about-me.css);
+@import url(./components/AboutMe/__title/about-me__title.css);
+@import url(./components/AboutMe/__student/about-me__student.css);
+@import url(./components/AboutMe/__text-container/about-me__text-container.css);
+@import url(./components/AboutMe/__name/about-me__name.css);
+@import url(./components/AboutMe/__brief/about-me__brief.css);
+@import url(./components/AboutMe/__description/about-me__description.css);
+@import url(./components/AboutMe/__git-link/about-me__git-link.css);
+@import url(./components/AboutMe/__image/about-me__image.css);
+
+@import url(./components/Portfolio/portfolio.css);
+@import url(./components/Portfolio/__title/portfolio__title.css);
+@import url(./components/Portfolio/__list/portfolio__list.css);
+@import url(./components/Portfolio/__list-item/portfolio__list-item.css);
+@import url(./components/Portfolio/__item-name/portfolio__item-name.css);
+@import url(./components/Portfolio/__item-link/portfolio__item-link.css);
+
+@import url(./components/Footer/footer.css);
+@import url(./components/Footer/__title/footer__title.css);
+@import url(./components/Footer/__container/footer__container.css);
+@import url(./components/Footer/__copyright/footer__copyright.css);
+@import url(./components/Footer/__links/footer__links.css);
+@import url(./components/Footer/__link/footer__link.css);
+
+@import url(./components/Movies/movies.css);
+
+@import url(./components/SearchForm/search-form.css);
+@import url(./components/SearchForm/__form/search-form__form.css);
+@import url(components/SearchForm/__input-container/search-form__input-container.css);
+@import url(./components/SearchForm/__input/search-form__input.css);
+@import url(./components/SearchForm/__button/search-form__button.css);
+@import url(./components/SearchForm/__filter-container/search-form__filter-container.css);
+@import url(./components/SearchForm/__checkbox/search-form__checkbox.css);
+@import url(./components/SearchForm/__checkbox/_checked/search-form__checkbox_checked.css);
+@import url(./components/SearchForm/__filter-name/search-form__filter-name.css);
+
+

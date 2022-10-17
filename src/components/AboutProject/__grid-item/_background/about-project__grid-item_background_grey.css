@@ -1,0 +1,4 @@
+.about-project__grid-item_background_grey {
+  background-color: var(--secondary-bg-variant);
+  color: var(--primary-text-color);
+}

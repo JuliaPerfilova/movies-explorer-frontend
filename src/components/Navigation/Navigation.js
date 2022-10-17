@@ -1,22 +1,23 @@
-import CustomLink from "../CustomLink/CustomLink";
+import ClickableElement from "../ClickableElement/ClickableElement";
+import {LINK_TYPES} from "../../utils/Constants";
 
 function Navigation({history}) {
   const location = history.location.pathname;
 
   return (
     <nav className='navigation'>
-      <CustomLink
+      <ClickableElement
         to='/movies'
-        type='text'
+        type={LINK_TYPES.LINK}
         className={`navigation__item ${location === '/movies' ? 'navigation__item_active' : ''}`}>
         Фильмы
-      </CustomLink>
-      <CustomLink
+      </ClickableElement>
+      <ClickableElement
         to='/saved-movies'
-        type='text'
+        type={LINK_TYPES.LINK}
         className={`navigation__item ${location === '/saved-movies' ? 'navigation__item_active' : ''}`}>
         Сохранённые фильмы
-      </CustomLink>
+      </ClickableElement>
     </nav>
   );
 }

@@ -1,7 +1,8 @@
 .constants {
   --primary-bg: #202020;
+  --primary-variant-bg: #272727;
   --secondary-bg: #313131;
-  --secindary-bg-variant: #414040;
+  --secondary-bg-variant: #414040;
 
   --header-bg: #222222;
 
@@ -9,6 +10,11 @@
 
   --primary-text-color: #FFFFFF;
   --secondary-text-color: #000000;
+  --secondary-text-color-variant: #8B8B8B;
+
+  --primary-underline-color: #DADADA;
+  --secondary-underline-color: #424242;
+  --secondary-underline-color-variant: #AAAAAA;
 
   --link-transition: .2s;
   --hovered-button-link-opacity: .8;

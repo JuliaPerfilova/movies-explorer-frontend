@@ -1,0 +1,10 @@
+.portfolio {
+  width: 100%;
+  min-height: 475px;
+  background-color: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 50px var(--1280-resolution-padding) 0;
+}

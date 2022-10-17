@@ -1,0 +1,4 @@
+.about-project__description {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,6 @@
+.about-me__student {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 66px 0 0;
+}

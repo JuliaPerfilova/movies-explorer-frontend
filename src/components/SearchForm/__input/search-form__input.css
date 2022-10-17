@@ -1,0 +1,17 @@
+.search-form__input {
+  width: 100%;
+  height: 72px;
+  border: 1.5px solid rgba(170,170,170, 0.2);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--primary-text-color);
+  box-sizing: border-box;
+  background-color: var(--primary-bg);
+  padding: 25px 135px 25px 25px;
+}
+
+.search-form__input::placeholder {
+  color: var(--secondary-text-color-variant);
+}

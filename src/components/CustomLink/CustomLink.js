@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-function CustomLink({to, className, type = 'text', children}) {
+function CustomLink({to, className = '', type = 'text', children}) {
   return (
     <Link
       to={to}

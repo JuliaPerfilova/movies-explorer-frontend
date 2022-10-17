@@ -1,0 +1,9 @@
+.search-form {
+  width: 100%;
+  min-height: 242px;
+  background-color: var(--primary-bg);
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 70px var(--1280-resolution-padding) 0;
+}

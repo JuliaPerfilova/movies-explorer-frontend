@@ -1,0 +1,17 @@
+.portfolio__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px var(--secondary-underline-color) solid;
+  padding: 20px 0 9px 0;
+}
+
+.portfolio__list-item:first-of-type {
+  padding-top: 0;
+}
+
+.portfolio__list-item:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
