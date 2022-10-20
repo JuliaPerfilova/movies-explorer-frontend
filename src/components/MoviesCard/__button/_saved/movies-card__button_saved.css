@@ -1,0 +1,6 @@
+.movies-card__button_saved {
+  background-color: var(--secondary-accent-color);
+  background-image: url(../../../../images/saved.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -14,7 +14,7 @@ function Header({isLoggedIn, handleSignIn, handleSignOut, history}) {
     <div className="header">
       <ClickableElement
         type={LINK_TYPES.BUTTON}
-        className='logo'
+        className="logo"
         buttonClick={handleLogoClick}/>
       {location !== '/' &&
         <Navigation

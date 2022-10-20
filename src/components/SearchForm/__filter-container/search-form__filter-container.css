@@ -3,5 +3,6 @@
   display: flex;
   column-gap: 14px;
   align-items: center;
-  padding: 26px 0 0;
+  border-bottom: 1px solid rgba(170,170,170, 0.2);
+  padding: 26px 0 43px;
 }

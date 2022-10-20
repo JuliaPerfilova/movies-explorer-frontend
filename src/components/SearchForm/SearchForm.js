@@ -2,12 +2,12 @@ import ClickableElement from "../ClickableElement/ClickableElement";
 import {LINK_TYPES} from "../../utils/Constants";
 import {useState} from "react";
 
-function SearchForm() {
+function SearchForm({handleSearchClick}) {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log('searching...');
+    handleSearchClick();
   }
 
   const handleChecked = () => {
@@ -15,7 +15,7 @@ function SearchForm() {
   }
 
   return (
-    <div className="search-form">
+    <section className="search-form">
       <form className="search-form__form">
         <label className="search-form__input-container">
           <input
@@ -36,7 +36,7 @@ function SearchForm() {
           <p className="search-form__filter-name">Короткометражки</p>
         </label>
       </form>
-    </div>
+    </section>
   );
 };
 

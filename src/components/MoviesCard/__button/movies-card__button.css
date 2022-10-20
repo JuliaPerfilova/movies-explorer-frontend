@@ -1,0 +1,14 @@
+.movies-card__button {
+  width: 100px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bg-variant);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 11px;
+  border-radius: 30px;
+  margin: 18px 0;
+  padding: 0;
+}

@@ -77,6 +77,8 @@
 
 @import url(./components/Movies/movies.css);
 
+@import url(./components/SavedMovies/saved-movies.css);
+
 @import url(./components/SearchForm/search-form.css);
 @import url(./components/SearchForm/__form/search-form__form.css);
 @import url(components/SearchForm/__input-container/search-form__input-container.css);
@@ -87,4 +89,16 @@
 @import url(./components/SearchForm/__checkbox/_checked/search-form__checkbox_checked.css);
 @import url(./components/SearchForm/__filter-name/search-form__filter-name.css);
 
+@import url(./components/MoviesCardList/movies-card-list.css);
 
+@import url(./components/MoviesCard/movies-card.css);
+@import url(./components/MoviesCard/__header/movies-card__header.css);
+@import url(./components/MoviesCard/__title/movies-card__title.css);
+@import url(./components/MoviesCard/__duration/movies-card__duration.css);
+@import url(./components/MoviesCard/__image/movies-card__image.css);
+@import url(./components/MoviesCard/__button/movies-card__button.css);
+@import url(./components/MoviesCard/__button/_type/movies-card__button_type_saved.css);
+@import url(./components/MoviesCard/__button/_type/movies-card__button_type_delete.css);
+
+@import url(./components/Loader/loader.css);
+@import url(./components/Loader/__more-button/loader__more-button.css);
