@@ -18,7 +18,7 @@ function SavedMovies({savedMoviesArr}) {
   return (
     <div className='saved-movies'>
       <SearchForm
-        handleSearchClick={handleSearchClick}/>
+        onSearchClick={handleSearchClick}/>
       {!isLoading &&
         <MoviesCardList
           isSavedMoviesPage={true}
@@ -28,7 +28,7 @@ function SavedMovies({savedMoviesArr}) {
       <Loader
         isLoading={isLoading}
         isMoreButtonToShow={savedMoviesArr.length > moviesQuantityToShow}
-        handleMoreButtonClick={handleMoreButtonClick}/>
+        onMoreButtonClick={handleMoreButtonClick}/>
     </div>
   );
 }

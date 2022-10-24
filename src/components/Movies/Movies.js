@@ -19,7 +19,7 @@ function Movies({moviesArr}) {
   return (
     <div className="movies">
       <SearchForm
-        handleSearchClick={handleSearchClick}/>
+        onSearchClick={handleSearchClick}/>
       {!isLoading &&
         <MoviesCardList
           moviesQuantityToShow={moviesQuantityToShow}
@@ -28,7 +28,7 @@ function Movies({moviesArr}) {
       <Loader
         isLoading={isLoading}
         isMoreButtonToShow={moviesArr.length > moviesQuantityToShow}
-        handleMoreButtonClick={handleMoreButtonClick}/>
+        onMoreButtonClick={handleMoreButtonClick}/>
     </div>
   );
 }

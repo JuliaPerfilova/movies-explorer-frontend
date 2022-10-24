@@ -1,0 +1,11 @@
+.entry-page__label {
+  width: 100%;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--secondary-text-color-variant);
+  display: flex;
+  margin: 0;
+  padding: 6px 0 0;
+  flex-direction: column;
+}

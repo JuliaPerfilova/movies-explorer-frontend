@@ -1,14 +1,14 @@
 import ClickableElement from "../ClickableElement/ClickableElement";
 import {LINK_TYPES} from "../../utils/Constants";
 
-function AccountContainer({isLoggedIn, handleSignIn, handleSignOut}) {
+function AccountContainer({isLoggedIn, onSignIn, onOpenProfile}) {
 
   return (
-    <div className='account-container'>
+    <div className="account-container">
       {!isLoggedIn && <ClickableElement
         to='/signup'
         type={LINK_TYPES.LINK}
-        className='account-container__item'>
+        className="account-container__item">
         Регистрация
       </ClickableElement>}
       <ClickableElement
@@ -17,7 +17,7 @@ function AccountContainer({isLoggedIn, handleSignIn, handleSignOut}) {
           'account-container__button_type_profile' :
           'account-container__button_type_login'}`
         }
-        buttonClick={isLoggedIn ? handleSignOut : handleSignIn}>
+        buttonClick={isLoggedIn ? onOpenProfile : onSignIn}>
         {`${isLoggedIn ? 'Аккаунт' : 'Войти'}`}
       </ClickableElement>
     </div>

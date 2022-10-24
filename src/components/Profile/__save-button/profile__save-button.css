@@ -1,0 +1,10 @@
+.profile__save-button {
+  height: 45px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 20px 0 0;
+}

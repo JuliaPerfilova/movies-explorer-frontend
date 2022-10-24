@@ -102,3 +102,30 @@
 
 @import url(./components/Loader/loader.css);
 @import url(./components/Loader/__more-button/loader__more-button.css);
+
+@import url(components/EntryPage/entry-page.css);
+@import url(components/EntryPage/__title/entry-page__title.css);
+@import url(components/EntryPage/__form/entry-page__form.css);
+@import url(components/EntryPage/__label/entry-page__label.css);
+@import url(components/EntryPage/__input/entry-page__input.css);
+@import url(components/EntryPage/__error/entry-page__error.css);
+@import url(components/EntryPage/__submit-button/entry-page__submit-button.css);
+@import url(components/EntryPage/__bottom-text/entry-page__bottom-text.css);
+@import url(components/EntryPage/__link/entry-page__link.css);
+
+@import url(./components/Profile/profile.css);
+@import url(./components/Profile/__title/profile__title.css);
+@import url(./components/Profile/__form/profile__form.css);
+@import url(./components/Profile/__label/profile__label.css);
+@import url(./components/Profile/__input/profile__input.css);
+@import url(./components/Profile/__edit-buttom/profile__edit-button.css);
+@import url(./components/Profile/__logout-button/profile__logout-button.css);
+@import url(./components/Profile/__save-button/profile__save-button.css);
+@import url(./components/Profile/__save-button/_disabled/profile__save-button_disabled.css);
+@import url(components/Profile/__error/profile__error.css);
+
+@import url(./components/NotFound/not-found.css);
+@import url(./components/NotFound/__title/not-found__title.css);
+@import url(./components/NotFound/__subtitle/not-found__subtitle.css);
+@import url(./components/NotFound/__back-link/not-found__back-link.css);
+

@@ -2,12 +2,12 @@ import ClickableElement from "../ClickableElement/ClickableElement";
 import {LINK_TYPES} from "../../utils/Constants";
 import {useState} from "react";
 
-function SearchForm({handleSearchClick}) {
+function SearchForm({onSearchClick}) {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleSearch = (e) => {
     e.preventDefault();
-    handleSearchClick();
+    onSearchClick();
   }
 
   const handleChecked = () => {

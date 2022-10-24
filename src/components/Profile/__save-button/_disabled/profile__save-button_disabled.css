@@ -1,0 +1,5 @@
+.profile__save-button_disabled {
+  pointer-events: none;
+  color: var(--secondary-text-color-variant);
+  background-color: var(--secondary-bg-variant);
+}

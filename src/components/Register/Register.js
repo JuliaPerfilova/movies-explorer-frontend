@@ -1,13 +1,17 @@
-import EntryForm from "../EntryForm/EntryForm";
+import EntryPage from "../EntryPage/EntryPage";
 
-function Register() {
+function Register({onLogoClick}) {
 
   return (
-    <EntryForm
+    <EntryPage
+      onLogoClick={onLogoClick}
       title="Добро пожаловать!"
+      bottomText="Уже зарегистрированы?"
+      bottomLink='/signin'
+      bottomLinkText="Войти"
       buttonName="Зарегистрироваться"
-      subtitle="Уже зарегистрированы?"
     />
   );
-};
+}
+
 export default Register;

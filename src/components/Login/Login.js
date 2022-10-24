@@ -1,12 +1,17 @@
-import EntryForm from "../EntryForm/EntryForm";
+import EntryPage from "../EntryPage/EntryPage";
 
-function Login() {
+
+function Login({onLogoClick, onSigninSubmit}) {
 
   return (
-    <EntryForm
+    <EntryPage
+      onLogoClick={onLogoClick}
+      onSubmit={onSigninSubmit}
       title="Рады видеть!"
+      bottomText='Ещё не зарегистрированы?'
+      bottomLink='/signup'
+      bottomLinkText='Регистрация'
       buttonName="Войти"
-      subtitle="Ещё не зарегистрированы?"
     />
   );
 };

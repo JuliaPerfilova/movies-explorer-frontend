@@ -4,11 +4,10 @@ import {useState} from "react";
 import noImageImg from "../../images/noImageImg.jpg"
 
 function MoviesCard({title, duration, imageUrl, isSaved, isSavedMoviesPage}) {
-  console.log(imageUrl);
   const [saved, setSaved] = useState(isSaved);
-  const [saveButtonText, setSaveButtonText] = useState('Сохранить');
+  const [saveButtonText, setSaveButtonText] = useState(saved ? '' : 'Сохранить');
 
-  const handleSave = () => {
+  const handleCardButtonClick = () => {
     if (saveButtonText === '') {
       setSaveButtonText('Сохранить');
     } else {
@@ -32,7 +31,7 @@ function MoviesCard({title, duration, imageUrl, isSaved, isSavedMoviesPage}) {
         }}/>
       <ClickableElement
         type={LINK_TYPES.BUTTON}
-        buttonClick={handleSave}
+        buttonClick={handleCardButtonClick}
         className={`movies-card__button${isSavedMoviesPage ?
           ' movies-card__button_type_delete' :
           saved ? ' movies-card__button_type_saved' : ''}`}>
@@ -40,6 +39,6 @@ function MoviesCard({title, duration, imageUrl, isSaved, isSavedMoviesPage}) {
       </ClickableElement>
     </article>
   );
-};
+}
 
 export default MoviesCard;
