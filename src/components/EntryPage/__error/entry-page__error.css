@@ -7,3 +7,9 @@
   color: var(--secondary-accent-color);
   padding: 6px 0 0;
 }
+
+/* @media screen and (max-width: 769px) {
+  .entry-page__error:last-of-type {
+    margin-bottom: 87px;
+  }
+} */

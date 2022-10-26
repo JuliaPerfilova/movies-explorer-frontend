@@ -1,4 +1,7 @@
-.account-container__button_type_login {
+.navigation__account-button_type_login {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   border-radius: 3px;

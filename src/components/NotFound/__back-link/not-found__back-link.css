@@ -6,3 +6,9 @@
   padding: 184px 0 60px;
   color: var(--accent-color);
 }
+
+@media screen and (max-width: 420px) {
+  .not-found__back-link {
+    padding: 284px 0 30px;
+  }
+}

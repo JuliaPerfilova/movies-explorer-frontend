@@ -3,25 +3,25 @@ import {LINK_TYPES} from "../../utils/Constants";
 
 function NavTab() {
   return (
-    <nav className='nav-tab'>
+    <nav className="nav-tab">
       <ul className="nav-tab__list">
         <li className="nav-tab__item">
           <ClickableElement
-            to='#about'
+            to="#about"
             type={LINK_TYPES.LINK}>
             О проекте
           </ClickableElement>
         </li>
         <li className="nav-tab__item">
           <ClickableElement
-            to='#technologies'
+            to="#technologies"
             type={LINK_TYPES.LINK}>
             Технологии
           </ClickableElement>
         </li>
         <li className="nav-tab__item">
           <ClickableElement
-            to='#student'
+            to="#student"
             type={LINK_TYPES.LINK}>
             Студент
           </ClickableElement>

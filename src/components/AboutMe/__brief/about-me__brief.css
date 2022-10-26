@@ -8,3 +8,19 @@
   margin: 0;
   padding: 18px 0 0;
 }
+
+@media screen and (max-width: 769px) {
+  .about-me__brief {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 16px 0 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-me__brief {
+    font-size: 11px;
+    line-height: 16px;
+    padding: 20px 0 0;
+  }
+}

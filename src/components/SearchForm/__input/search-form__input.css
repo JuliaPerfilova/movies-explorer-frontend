@@ -15,3 +15,12 @@
 .search-form__input::placeholder {
   color: var(--secondary-text-color-variant);
 }
+
+@media screen and (max-width: 420px) {
+  .search-form__input {
+    height: 56px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 20px 100px 20px 12px;
+  }
+}

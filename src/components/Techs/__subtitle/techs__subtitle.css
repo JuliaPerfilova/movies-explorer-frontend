@@ -10,3 +10,17 @@
   margin: 0;
   padding: 90px 0 0;
 }
+
+@media screen and (max-width: 769px) {
+  .techs__subtitle {
+  padding: 80px 0 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .techs__subtitle {
+  padding: 60px 0 0;
+  font-size: 30px;
+  line-height: 36px;
+  }
+}

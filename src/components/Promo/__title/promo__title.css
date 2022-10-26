@@ -10,3 +10,17 @@
 
   color: var(--primary-text-color);
 }
+
+@media screen and (max-width: 690px) {
+  .promo__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .promo__title {
+    font-size: 31px;
+    line-height: 39px;
+  }
+}

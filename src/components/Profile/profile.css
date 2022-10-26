@@ -7,3 +7,16 @@
   box-sizing: border-box;
   padding: 74px 0 0;
 }
+
+@media screen and (max-width: 769px) {
+  .profile {
+    padding: 236px 0 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .profile {
+    padding: 70px 0 0;
+    max-width: 260px;
+  }
+}

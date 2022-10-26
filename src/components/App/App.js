@@ -13,10 +13,11 @@ import NotFound from "../NotFound/NotFound";
 
 function App() {
   const history = useHistory();
+  const moviesArr = TEMP_MOVIES_ARR;
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [moviesArr, setMoviesArr] = useState(TEMP_MOVIES_ARR);
   const [savedMoviesArr, setSavedMoviesArr] = useState([]);
+
 
   useEffect(() => {
     setSavedMoviesArr(

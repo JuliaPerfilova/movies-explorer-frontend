@@ -5,3 +5,10 @@
   color: var(--accent-color);
   margin: 0;
 }
+
+@media screen and (max-width: 420px) {
+  .entry-page__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

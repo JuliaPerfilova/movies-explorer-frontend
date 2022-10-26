@@ -4,7 +4,7 @@ import {LINK_TYPES} from "../../utils/Constants";
 
 function AboutMe() {
   return (
-    <section className='about-me'>
+    <section className="about-me" id="student">
       <h2 className="about-me__title">Студент</h2>
       <div className="about-me__student">
         <div className="about-me__text-container">
@@ -14,8 +14,8 @@ function AboutMe() {
             мне интересна тема веб-разработки, поэтому я выбрала соответствующий курс от Яндекс-Практикума. Представляю вам свою дипломную работу по
             окончании курса.</p>
           <ClickableElement
-            to='https://github.com/JuliaPerfilova/'
-            className='about-me__git-link'
+            to="https://github.com/JuliaPerfilova/"
+            className="about-me__git-link"
             type={LINK_TYPES.LINK}
             isExternal={true}>Github</ClickableElement>
         </div>

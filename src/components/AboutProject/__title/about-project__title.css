@@ -9,3 +9,17 @@
   padding: 110px 0 23px 0;
   border-bottom: 1px var(--primary-underline-color) solid;
 }
+
+@media screen and (max-width: 769px) {
+  .about-project__title {
+    padding: 90px 0 23px 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-project__title {
+    padding: 70px 0 28px 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

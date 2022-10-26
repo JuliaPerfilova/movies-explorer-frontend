@@ -19,7 +19,7 @@ function Footer() {
               Яндекс.Практикум
             </ClickableElement>
             <ClickableElement
-              to="https://github.com/JuliaPerfilova"
+              to="https://github.com"
               type={LINK_TYPES.LINK}
               className="footer__link"
               isExternal={true}>

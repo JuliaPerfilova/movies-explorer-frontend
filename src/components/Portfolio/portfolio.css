@@ -8,3 +8,16 @@
   margin: 0;
   padding: 50px var(--1280-resolution-padding) 0;
 }
+
+@media screen and (max-width: 769px) {
+  .portfolio {
+    min-height: 390px;
+    padding: 0 var(--768-resolution-padding-50);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .portfolio {
+    padding: 0 var(--320-resolution-padding-14);
+  }
+}

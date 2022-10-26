@@ -9,3 +9,7 @@
   padding: 6px 0 0;
   flex-direction: column;
 }
+
+.entry-page__label:first-of-type{
+  padding: 0;
+}

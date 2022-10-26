@@ -12,3 +12,13 @@
   line-height: 18px;
   text-align: center;
 }
+
+@media screen and (max-width: 420px) {
+  .search-form__button {
+    width: 80px;
+    height: 44px;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+  }
+}

@@ -4,8 +4,6 @@
   --secondary-bg: #313131;
   --secondary-bg-variant: #414040;
 
-  --header-bg: #222222;
-
   --accent-color: #3DDC84;
   --secondary-accent-color: #FE8A1F;
 
@@ -22,4 +20,11 @@
   --hovered-text-link-opacity: .7;
 
   --1280-resolution-padding: 70px;
+
+  --768-resolution-padding-50: 50px;
+  --768-resolution-padding-30: 30px;
+
+  --320-resolution-padding-14: 14px;
+  --320-resolution-padding-18: 18px;
+  --320-resolution-padding-footer: 10px;
 }

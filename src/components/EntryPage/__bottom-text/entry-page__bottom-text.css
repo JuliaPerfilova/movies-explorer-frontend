@@ -9,3 +9,10 @@
   margin: 0;
   padding: 16px 0 0;
 }
+
+@media screen and (max-width: 420px) {
+  .entry-page__bottom-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

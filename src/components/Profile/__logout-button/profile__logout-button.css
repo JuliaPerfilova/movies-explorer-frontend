@@ -7,3 +7,10 @@
   margin: 0;
   padding: 16px 0 0;
 }
+
+@media screen and (max-width: 420px) {
+  .profile__logout-button {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

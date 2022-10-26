@@ -5,3 +5,9 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media screen and (max-width: 420px) {
+  .profile__form {
+    padding: 80px var(--768-resolution-padding-30) 0;
+  }
+}

@@ -9,3 +9,9 @@
   width: 100%;
   min-height: 524px;
 }
+
+@media screen and (max-width: 420px) {
+  .promo {
+    min-height: 570px;
+  }
+}

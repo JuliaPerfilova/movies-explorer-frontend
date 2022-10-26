@@ -1,0 +1,9 @@
+.entry-page__submit-button_type_register {
+  margin: 134px 0 0;
+}
+
+@media screen and (max-width: 420px){
+  .entry-page__submit-button_type_register {
+    margin: 222px 0 0;
+  }
+}

@@ -8,3 +8,16 @@
   color: var(--primary-text-color);
   margin: 0;
 }
+
+@media screen and (max-width: 769px) {
+  .portfolio__item-name {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .portfolio__item-name {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

@@ -8,3 +8,18 @@
   color: var(--primary-text-color);
   margin: 0;
 }
+
+@media screen and (max-width: 769px) {
+  .about-me__name { 
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .about-me__name { 
+    font-size: 30px;
+    line-height: 36px;
+    padding: 40px 0 0;
+  }
+}

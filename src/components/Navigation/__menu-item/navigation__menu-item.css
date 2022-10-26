@@ -1,0 +1,28 @@
+.navigation__menu-item {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.navigation__menu-item:first-of-type {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .navigation__menu-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .navigation__menu-item:first-of-type {
+    display: flex;
+  }
+}

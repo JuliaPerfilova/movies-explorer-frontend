@@ -4,3 +4,9 @@
   line-height: 16px;
   margin: 0;
 }
+
+@media screen and (max-width: 420px) {
+  .footer__link {
+    font-size: 12px;
+  }
+}

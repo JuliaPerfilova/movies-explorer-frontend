@@ -8,3 +8,9 @@
   margin: 0;
   padding: 26px 0 0;
 }
+
+@media screen and (max-width: 769px) {
+  .about-me__description {
+    padding: 20px 0 0;    
+  }
+}

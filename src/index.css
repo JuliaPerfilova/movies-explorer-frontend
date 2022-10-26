@@ -7,21 +7,28 @@
 
 @import url(./components/Logo/logo.css);
 
-@import url(components/ClickableElement/clickable-element.css);
-@import url(components/ClickableElement/_type/clickable-element_type_button.css);
-@import url(components/ClickableElement/_type/clickable-element_type_link.css);
+@import url(./components/ClickableElement/clickable-element.css);
+@import url(./components/ClickableElement/_type/clickable-element_type_button.css);
+@import url(./components/ClickableElement/_type/clickable-element_type_link.css);
 
 @import url(./components/Header/header.css);
 
 @import url(./components/Navigation/navigation.css);
-@import url(./components/Navigation/__item/navigation__item.css);
-@import url(./components/Navigation/__item/_active/navigation__item_active.css);
-
-@import url(./components/AccountContainer/account-container.css);
-@import url(./components/AccountContainer/__item/account-container__item.css);
-@import url(./components/AccountContainer/__button/account-container__button.css);
-@import url(./components/AccountContainer/__button/_type/account-container__button_type_login.css);
-@import url(./components/AccountContainer/__button/_type/account-container__button_type_profile.css);
+@import url(./components/Navigation/_burger/navigation_burger.css);
+@import url(./components/Navigation/__container/navigation__container.css);
+@import url(./components/Navigation/__container/_burger/navigation__container_burger.css);
+@import url(./components/Navigation/__burger-button/navigation__burger-button.css);
+@import url(./components/Navigation/__burger-button/_type/navigation__burger-button_type_open.css);
+@import url(./components/Navigation/__burger-button/_type/navigation__burger-button_type_close.css);
+@import url(./components/Navigation/__burger-button/navigation__burger-button.css);
+@import url(./components/Navigation/__menu/navigation__menu.css);
+@import url(./components/Navigation/__menu/_burger/navigation__menu_burger.css);
+@import url(./components/Navigation/__menu-item/navigation__menu-item.css);
+@import url(./components/Navigation/__menu-item/_active/navigation__menu-item_active.css);
+@import url(./components/Navigation/__account-item/navigation__account-item.css);
+@import url(./components/Navigation/__account-button/navigation__account-button.css);
+@import url(./components/Navigation/__account-button/_type/navigation__account-button_type_login.css);
+@import url(./components/Navigation/__account-button/_type/navigation__account-button_type_profile.css);
 
 @import url(./components/Main/main.css);
 
@@ -81,7 +88,7 @@
 
 @import url(./components/SearchForm/search-form.css);
 @import url(./components/SearchForm/__form/search-form__form.css);
-@import url(components/SearchForm/__input-container/search-form__input-container.css);
+@import url(./components/SearchForm/__input-container/search-form__input-container.css);
 @import url(./components/SearchForm/__input/search-form__input.css);
 @import url(./components/SearchForm/__button/search-form__button.css);
 @import url(./components/SearchForm/__filter-container/search-form__filter-container.css);
@@ -103,15 +110,17 @@
 @import url(./components/Loader/loader.css);
 @import url(./components/Loader/__more-button/loader__more-button.css);
 
-@import url(components/EntryPage/entry-page.css);
-@import url(components/EntryPage/__title/entry-page__title.css);
-@import url(components/EntryPage/__form/entry-page__form.css);
-@import url(components/EntryPage/__label/entry-page__label.css);
-@import url(components/EntryPage/__input/entry-page__input.css);
-@import url(components/EntryPage/__error/entry-page__error.css);
-@import url(components/EntryPage/__submit-button/entry-page__submit-button.css);
-@import url(components/EntryPage/__bottom-text/entry-page__bottom-text.css);
-@import url(components/EntryPage/__link/entry-page__link.css);
+@import url(./components/EntryPage/entry-page.css);
+@import url(./components/EntryPage/__title/entry-page__title.css);
+@import url(./components/EntryPage/__form/entry-page__form.css);
+@import url(./components/EntryPage/__label/entry-page__label.css);
+@import url(./components/EntryPage/__input/entry-page__input.css);
+@import url(./components/EntryPage/__error/entry-page__error.css);
+@import url(./components/EntryPage/__submit-button/entry-page__submit-button.css);
+@import url(./components/EntryPage/__submit-button/_type/entry-page__submit-button_type_login.css);
+@import url(./components/EntryPage/__submit-button/_type/entry-page__submit-button_type_register.css);
+@import url(./components/EntryPage/__bottom-text/entry-page__bottom-text.css);
+@import url(./components/EntryPage/__link/entry-page__link.css);
 
 @import url(./components/Profile/profile.css);
 @import url(./components/Profile/__title/profile__title.css);
@@ -122,7 +131,7 @@
 @import url(./components/Profile/__logout-button/profile__logout-button.css);
 @import url(./components/Profile/__save-button/profile__save-button.css);
 @import url(./components/Profile/__save-button/_disabled/profile__save-button_disabled.css);
-@import url(components/Profile/__error/profile__error.css);
+@import url(./components/Profile/__error/profile__error.css);
 
 @import url(./components/NotFound/not-found.css);
 @import url(./components/NotFound/__title/not-found__title.css);

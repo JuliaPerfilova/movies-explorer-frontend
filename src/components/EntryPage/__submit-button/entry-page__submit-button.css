@@ -5,5 +5,11 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  margin: 134px 0 0;
+}
+
+@media screen and (max-width: 420px) {
+  .entry-page__submit-button {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

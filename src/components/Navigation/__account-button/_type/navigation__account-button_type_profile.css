@@ -1,0 +1,8 @@
+.navigation__account-button_type_profile {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg);
+  border-radius: 20px;
+}

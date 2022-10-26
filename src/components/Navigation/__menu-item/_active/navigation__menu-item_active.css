@@ -1,0 +1,9 @@
+.navigation__menu-item_active {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 769px) {
+  .navigation__menu-item_active {
+    border-bottom: 2px solid white;
+  }
+}

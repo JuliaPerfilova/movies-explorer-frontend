@@ -8,3 +8,10 @@
 
   color: var(--primary-text-color);
 }
+
+@media screen and (max-width: 420px) {
+  .nav-tab__item {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}

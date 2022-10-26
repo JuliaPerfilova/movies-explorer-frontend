@@ -4,3 +4,12 @@
   line-height: 16px;
   margin: 0;
 }
+
+@media screen and (max-width: 420px) {
+  .footer__copyright {
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--secondary-text-color-variant);
+    padding: 30px 0 0;
+  }
+}

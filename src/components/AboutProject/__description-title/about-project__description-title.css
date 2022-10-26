@@ -8,3 +8,10 @@
   color: var(--primary-text-color);
   margin: 0;
 }
+
+@media screen and (max-width: 420px) {
+  .about-project__description-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

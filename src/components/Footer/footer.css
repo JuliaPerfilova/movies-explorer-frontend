@@ -9,3 +9,16 @@
   margin: 0;
   padding: 0 var(--1280-resolution-padding);
 }
+
+@media screen and (max-width: 800px) {
+  .footer {
+    padding: 0 var(--768-resolution-padding-30);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    padding: 0 var(--320-resolution-padding-footer);
+    min-height: 243px;
+  }
+}

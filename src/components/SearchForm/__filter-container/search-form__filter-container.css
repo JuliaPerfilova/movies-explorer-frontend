@@ -6,3 +6,15 @@
   border-bottom: 1px solid rgba(170,170,170, 0.2);
   padding: 26px 0 43px;
 }
+
+@media screen and (max-width: 769px) {
+  .search-form__filter-container {
+    padding: 26px 0 52px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .search-form__filter-container {
+    padding: 31px 0 64px;
+  }
+}

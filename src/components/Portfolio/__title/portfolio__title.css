@@ -7,3 +7,10 @@
   color: var(--secondary-text-color-variant);
   margin: 0;
 }
+
+@media screen and (max-width: 420px) {
+  .portfolio__title {
+  font-size: 14px;
+  line-height: 20px;
+  }
+}

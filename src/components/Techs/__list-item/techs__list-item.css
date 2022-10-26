@@ -15,3 +15,11 @@
   color: var(--primary-text-color);
   border-radius: 10px;
 }
+
+@media screen and (max-width: 769px) {
+  .techs__list-item {
+    width: 84px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

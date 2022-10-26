@@ -9,25 +9,25 @@ function Portfolio() {
         <li className="portfolio__list-item">
           <p className="portfolio__item-name">Статичный сайт</p>
           <ClickableElement
-            to='/#'
+            to="https://github.com/JuliaPerfilova/how-to-learn"
             type={LINK_TYPES.LINK}
-            className='portfolio__item-link'
+            className="portfolio__item-link"
             isExternal={true}>&#8599;</ClickableElement>
         </li>
         <li className="portfolio__list-item">
           <p className="portfolio__item-name">Адаптивный сайт</p>
           <ClickableElement
-            to='https://juliaperfilova.github.io/russian-travel'
+            to="https://juliaperfilova.github.io/russian-travel"
             type={LINK_TYPES.LINK}
-            className='portfolio__item-link'
+            className="portfolio__item-link"
             isExternal={true}>&#8599;</ClickableElement>
         </li>
         <li className="portfolio__list-item">
           <p className="portfolio__item-name">Одностраничное приложение</p>
           <ClickableElement
-            to='/#'
+            to="https://mesto.perfilova.nomoredomains.sbs/"
             type={LINK_TYPES.LINK}
-            className='portfolio__item-link'
+            className="portfolio__item-link"
             isExternal={true}>&#8599;</ClickableElement>
         </li>
       </ul>
