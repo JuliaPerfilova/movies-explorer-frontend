@@ -6,6 +6,7 @@
   line-height: 60px;
   letter-spacing: -0.04em;
   color: var(--primary-text-color);
+  margin: 0;
 }
 
 @media screen and (max-width: 769px) {

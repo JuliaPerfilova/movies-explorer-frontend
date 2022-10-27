@@ -27,7 +27,8 @@ function SearchForm({onSearchClick}) {
           <ClickableElement
             type={LINK_TYPES.BUTTON}
             buttonClick={handleSearch}
-            className="search-form__button">
+            className="search-form__button"
+            isButtonSubmit={true}>
             Поиск
           </ClickableElement>
         </label>

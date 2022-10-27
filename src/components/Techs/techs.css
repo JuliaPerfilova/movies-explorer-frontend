@@ -18,6 +18,7 @@
 
 @media screen and (max-width: 420px) {
   .techs {
+    background-color: var(--primary-bg);
     min-height: 651px;
     padding: 0 var(--320-resolution-padding-14);
   }

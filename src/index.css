@@ -71,6 +71,7 @@
 @import url(./components/Portfolio/portfolio.css);
 @import url(./components/Portfolio/__title/portfolio__title.css);
 @import url(./components/Portfolio/__list/portfolio__list.css);
+@import url(./components/Portfolio/__list-container/portfolio__list-container.css);
 @import url(./components/Portfolio/__list-item/portfolio__list-item.css);
 @import url(./components/Portfolio/__item-name/portfolio__item-name.css);
 @import url(./components/Portfolio/__item-link/portfolio__item-link.css);
