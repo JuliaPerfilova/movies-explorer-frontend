@@ -1,6 +1,6 @@
 import ClickableElement from "../ClickableElement/ClickableElement";
 import profilePhoto from '../../images/profile-photo.jpg';
-import {LINK_TYPES} from "../../utils/Constants";
+import {LINK_TYPES} from "../../utils/constants";
 
 function AboutMe() {
   return (

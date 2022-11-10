@@ -1,0 +1,8 @@
+.nothing-found {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 150px var(--1280-resolution-padding) 0;
+}

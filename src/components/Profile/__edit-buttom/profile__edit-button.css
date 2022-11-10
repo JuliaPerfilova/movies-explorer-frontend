@@ -3,18 +3,18 @@
   font-size: 13px;
   line-height: 16px;
   background-color: transparent;
-  margin: 220px 0 0;
+  margin: 116px 0 0;
 }
 
 @media screen and (max-width: 769px) {
   .profile__edit-button {
-    margin: 210px 0 0;
+    margin: 106px 0 0;
   }
 }
 
 @media screen and (max-width: 420px) {
   .profile__edit-button {
-    margin: 379px 0 0;
+    margin: 275px 0 0;
     font-size: 12px;
     line-height: 15px;
   }

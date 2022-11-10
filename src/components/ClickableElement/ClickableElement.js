@@ -1,5 +1,4 @@
-// import {Link} from "react-router-dom";
-import {LINK_TYPES} from "../../utils/Constants";
+import {LINK_TYPES} from "../../utils/constants";
 import { HashLink as Link } from 'react-router-hash-link';
 
 function ClickableElement({

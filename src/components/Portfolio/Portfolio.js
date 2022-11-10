@@ -1,5 +1,5 @@
 import ClickableElement from "../ClickableElement/ClickableElement";
-import {LINK_TYPES} from "../../utils/Constants";
+import {LINK_TYPES} from "../../utils/constants";
 
 function Portfolio() {
   return (

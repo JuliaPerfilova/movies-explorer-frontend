@@ -1,6 +1,6 @@
 import ClickableElement from "../ClickableElement/ClickableElement";
 import Navigation from "../Navigation/Navigation";
-import {LINK_TYPES} from "../../utils/Constants";
+import {LINK_TYPES} from "../../utils/constants";
 import {Route} from "react-router-dom";
 
 function Header({isLoggedIn, onLogoClick, onSignIn, onOpenProfile, history}) {

@@ -15,7 +15,7 @@
   --secondary-underline-color: #424242;
   --secondary-underline-color-variant: #AAAAAA;
 
-  --link-transition: .2s;
+  --link-transition: opacity .2s linear;
   --hovered-button-link-opacity: .8;
   --hovered-text-link-opacity: .7;
 

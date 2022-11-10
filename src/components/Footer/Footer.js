@@ -1,5 +1,5 @@
 import ClickableElement from "../ClickableElement/ClickableElement";
-import {LINK_TYPES} from "../../utils/Constants";
+import {LINK_TYPES} from "../../utils/constants";
 import {Route} from "react-router-dom";
 
 function Footer() {

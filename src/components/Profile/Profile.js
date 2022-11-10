@@ -1,80 +1,124 @@
 import ClickableElement from "../ClickableElement/ClickableElement";
-import {LINK_TYPES} from "../../utils/Constants";
-import {useState} from "react";
+import {LINK_TYPES, MESSAGES} from "../../utils/constants";
+import {useContext, useEffect, useState} from "react";
+import {useFormWithValidation} from "../../hooks/useFormWithValidation";
+import {CurrentUserContext} from "../../contexts/CurrentUserContext";
 
-function Profile({
-                   onSignOut,
-                   onSaveProfile
-                 }) {
-  const [isEdit, setIsEdit] = useState(false)
-  //temp
-  const [isError, setIsError] = useState(false)
-  const errorText = 'При обновлении профиля произошла ошибка.'
+
+function Profile({onLogOut, onUpdate}) {
+
+  const {values, handleInputChange, errors, setValues, isValid} = useFormWithValidation();
+
+  const [isFormDisabled, setIsFormDisabled] = useState(false);
+
+  const currentUser = useContext(CurrentUserContext);
+
+  const [isEdit, setIsEdit] = useState(false);
+
+  const [requestError, setRequestError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+
+  const [submitButtonText, setSubmitButtonText] = useState("Сохранить");
+
+  useEffect(() => {
+    setValues({
+      name: currentUser.name || '',
+      email: currentUser.email || '',
+    })
+  }, [setValues, currentUser.name, currentUser.email])
 
   const handleOpenEdit = () => {
     setIsEdit(true);
   }
 
   const handleSaveProfile = () => {
-    setIsError(true);
+    setIsFormDisabled(true);
+    setSubmitButtonText("Сохранение...");
+    onUpdate({name: values.name, email: values.email})
+      .then(() => {
+        setSuccessMessage(MESSAGES.PROFILE_SAVED);
+        setIsEdit(false);
+      })
+      .catch((err) => {
+        setRequestError(err);
+        console.log(err);
+      })
+      .finally(() => {
+        setIsFormDisabled(false);
+        setSubmitButtonText("Сохранить");
+      });
   }
 
   return (
     <section className="profile">
-      <h2 className="profile__title">Привет, Юлия!</h2>
-      <form className="profile__form">
+      <h2 className="profile__title">Привет, {currentUser.name}!</h2>
+      <form className="profile__form" noValidate={true}>
         <label className="profile__label">Имя
           <input
+            value={values.name || ''}
+            pattern="^[a-zA-Zа-яёА-ЯЁ\s\-]+$"
+            onChange={handleInputChange}
             type="text"
             className="profile__input"
-            defaultValue='Юлия'
             name="name"
             minLength="2"
             maxLength="30"
             required
+            disabled={!isEdit || isFormDisabled}
           />
+          <span className="profile__input-error">
+            {errors.name || ''}
+          </span>
         </label>
         <label className="profile__label">E-mail
           <input
+            value={values.email || ''}
+            onChange={handleInputChange}
             type="email"
             className="profile__input"
-            defaultValue='pochta@yandex.ru'
             name="email"
-            minLength="2"
+            minLength="5"
             maxLength="30"
             required
+            disabled={!isEdit || isFormDisabled}
           />
+          <span className="profile__input-error">
+            {errors.email || ''}
+          </span>
         </label>
         {isEdit ?
           <>
-            <span className='profile__error'>{isError ? errorText : ''}</span>
+            <span className='profile__error'>{requestError}</span>
             <ClickableElement
               buttonClick={handleSaveProfile}
               type={LINK_TYPES.BUTTON}
-              className={`profile__save-button${isError ? ' profile__save-button_disabled' : ''}`}>
-              Сохранить
+              className={`profile__save-button${((values.name === currentUser.name && values.email === currentUser.email) || !isValid || isFormDisabled) ? ' profile__save-button_disabled' : ''}`}>
+              {submitButtonText}
             </ClickableElement>
           </>
-           :
-          <ClickableElement
-            buttonClick={handleOpenEdit}
-            type={LINK_TYPES.BUTTON}
-            className="profile__edit-button">
-            Редактировать
-          </ClickableElement>
+          :
+          <>
+            <span className='profile__saved'>{successMessage}</span>
+            <ClickableElement
+              buttonClick={handleOpenEdit}
+              type={LINK_TYPES.BUTTON}
+              className="profile__edit-button">
+              Редактировать
+            </ClickableElement>
+          </>
         }
 
       </form>
       {!isEdit &&
         <ClickableElement
-        buttonClick={onSignOut}
-        type={LINK_TYPES.BUTTON}
-        className="profile__logout-button">
-        Выйти из аккаунта
-      </ClickableElement>}
+          buttonClick={onLogOut}
+          type={LINK_TYPES.BUTTON}
+          className="profile__logout-button">
+          Выйти из аккаунта
+        </ClickableElement>}
 
     </section>
   );
-};
+}
 
 export default Profile;

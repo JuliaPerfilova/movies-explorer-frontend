@@ -1,34 +1,74 @@
 import SearchForm from "../SearchForm/SearchForm";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import Loader from "../Loader/Loader";
+import {filterShortMovies, searchMoviesByKeyword} from "../../utils/utils";
 
-function SavedMovies({savedMoviesArr}) {
+function SavedMovies({savedMoviesArr, onDeleteClick}) {
 
-  const [moviesQuantityToShow, setMoviesQuantityToShow] = useState(12);
-  const [isLoading, setIsLoading] = useState(false);
+  const [shortMoviesChecked, setShortMoviesChecked] = useState(false);
+  const [searchedKeyword, setSearchedKeyword] = useState('');
 
-  const handleMoreButtonClick = () => {
-    setMoviesQuantityToShow(moviesQuantityToShow + 3);
+  const [moviesToShowArr, setMoviesToShowArr] = useState(savedMoviesArr);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (moviesToShowArr) {
+      setIsLoading(false);
+    }
+  }, [moviesToShowArr])
+
+  useEffect(() => {
+    filterMyMovies(searchedKeyword, shortMoviesChecked);
+  }, [savedMoviesArr])
+
+  const filterMyMovies = (keyword, isShortMovies) => {
+    const moviesByKeyword = searchMoviesByKeyword(keyword, savedMoviesArr);
+    setMoviesToShowArr(isShortMovies ? filterShortMovies(moviesByKeyword) : moviesByKeyword);
   }
 
-  const handleSearchClick = () => {
-    setIsLoading(!isLoading);
+  const handleCheckboxChange = (isChecked, keyword) => {
+    setShortMoviesChecked(isChecked);
+    filterMyMovies(keyword, isChecked);
   }
+
+  const handleSearchClick =(keyword, isShortMovies) => {
+    setIsLoading(true);
+    filterMyMovies(keyword, isShortMovies);
+  }
+
+  const getInitialValues = () => {
+    return {
+      initialCheckedValue: false,
+      initialKeywordValue: ''
+    };
+  }
+  
+  const saveAndValidateKeyword = (keyword) => {
+    setSearchedKeyword(keyword);
+    return {isValid: true};
+  }
+
   return (
     <div className='saved-movies'>
       <SearchForm
+        onCheckBoxChange={handleCheckboxChange}
+        inputRequired={false}
+        getInitialValues={getInitialValues}
+        saveAndValidateKeyword={saveAndValidateKeyword}
+        searchedKeyword={searchedKeyword}
+        shortMoviesChecked={shortMoviesChecked}
         onSearchClick={handleSearchClick}/>
       {!isLoading &&
         <MoviesCardList
           isSavedMoviesPage={true}
-          moviesQuantityToShow={moviesQuantityToShow}
-          moviesArr={savedMoviesArr}
+          onDeleteClick={onDeleteClick}
+          moviesToShowArr={moviesToShowArr}
+          savedMoviesArr={savedMoviesArr}
         />}
       <Loader
         isLoading={isLoading}
-        isMoreButtonToShow={savedMoviesArr.length > moviesQuantityToShow}
-        onMoreButtonClick={handleMoreButtonClick}/>
+        isMoreButtonToShow={false}/>
     </div>
   );
 }

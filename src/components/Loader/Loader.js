@@ -1,5 +1,5 @@
 import ClickableElement from "../ClickableElement/ClickableElement";
-import {LINK_TYPES} from "../../utils/Constants";
+import {LINK_TYPES} from "../../utils/constants";
 import Preloader from "../Preloader/Preloader";
 
 function Loader({isLoading, isMoreButtonToShow, onMoreButtonClick}) {
