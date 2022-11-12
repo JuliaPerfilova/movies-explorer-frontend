@@ -41,6 +41,5 @@ module.exports.ADD_CARDS_BY_WIDTH = {
 
 module.exports.MAIL_REGEXP = new RegExp (
   // eslint-disable-next-line no-useless-escape
-  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-  "ig",
+  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 );

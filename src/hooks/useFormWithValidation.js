@@ -18,15 +18,17 @@ export function useFormWithValidation() {
     const value = target.value;
     setValues({...values, [name]: value});
     if((!target.validationMessage || target.validationMessage === '') && (name === "email")) {
-      if (validateEmail(value)) {
-        setErrors({...errors, [name]: target.validationMessage });
+      const isEmailValid = validateEmail(value);
+      if (isEmailValid) {
+        setErrors({...errors, [name]: ''});
       } else {
         setErrors({...errors, [name]: INPUT_ERRORS.WRONG_EMAIL});
       }
+      setIsValid(target.closest("form").checkValidity() && isEmailValid);
     } else {
       setErrors({...errors, [name]: target.validationMessage });
+      setIsValid(target.closest("form").checkValidity());
     }
-    setIsValid(target.closest("form").checkValidity());
   };
 
 
