@@ -87,7 +87,7 @@ function App() {
     }
     return api.register(name, email, password)
       .then(() => {
-        history.push('/signin');
+        handleLoginSubmit(email, password);
       });
   }
 

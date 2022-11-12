@@ -1,38 +1,46 @@
 module.exports.LINK_TYPES = {
   BUTTON: "button",
   LINK: "link"
-}
+};
 
 module.exports.API_URLS = {
   IMAGES_URL: "https://api.nomoreparties.co",
   MOVIES_URL: "https://api.nomoreparties.co/beatfilm-movies",
   BASE_URL: "https://api.movies.perfilova.nomoredomains.icu",
   LOCAL_URL: "http://localhost:3000"
-}
+};
 
 module.exports.INPUT_ERRORS = {
   PROFILE_ERROR: "При обновлении профиля произошла ошибка",
   WRONG_EMAIL: 'Введен некорректный Email',
-}
+};
 
 module.exports.MESSAGES = {
   NOTHING_FOUND: "Ничего не найдено.",
   SERVER_ERROR: "Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.",
   PROFILE_SAVED: "Профиль успешно сохранен"
-}
+};
+
+module.exports.SHORTMOVIE_DURATION = 40;
 
 module.exports.WIDTH_THRESHOLDS = {
   HIGH: 1125,
   LOW: 640
-}
+};
 
 module.exports.CARDS_BY_WIDTH = {
   HIGH: 12,
   MEDIUM: 8,
   LOW: 5
-}
+};
 
 module.exports.ADD_CARDS_BY_WIDTH = {
   HIGH: 3,
   LOW: 2
-}
+};
+
+module.exports.MAIL_REGEXP = new RegExp (
+  // eslint-disable-next-line no-useless-escape
+  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+  "ig",
+);
