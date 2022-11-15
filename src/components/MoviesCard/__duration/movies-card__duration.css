@@ -1,0 +1,10 @@
+.movies-card__duration {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  color: var(--secondary-text-color-variant);
+}

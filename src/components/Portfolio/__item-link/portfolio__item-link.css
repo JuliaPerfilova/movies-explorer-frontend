@@ -1,0 +1,23 @@
+.portfolio__item-link {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: -0.04em;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+@media screen and (max-width: 769px) {
+  .portfolio__item-link {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .portfolio__item-link {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,19 @@
+@media screen and (max-width: 769px) {
+  .navigation__container_burger {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 520px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-bg);
+    box-sizing: border-box;
+    padding: 159px 0 90px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navigation__container_burger {
+    padding: 144px 0 46px;
+  }
+}

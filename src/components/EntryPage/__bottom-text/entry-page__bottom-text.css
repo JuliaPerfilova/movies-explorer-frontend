@@ -1,0 +1,18 @@
+.entry-page__bottom-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  justify-content: center;
+  column-gap: 6px;
+  color: var(--secondary-text-color-variant);
+  margin: 0;
+  padding: 16px 0 0;
+}
+
+@media screen and (max-width: 420px) {
+  .entry-page__bottom-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

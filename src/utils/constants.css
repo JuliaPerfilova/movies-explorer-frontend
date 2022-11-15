@@ -1,0 +1,30 @@
+.constants {
+  --primary-bg: #202020;
+  --primary-variant-bg: #272727;
+  --secondary-bg: #313131;
+  --secondary-bg-variant: #414040;
+
+  --accent-color: #3DDC84;
+  --secondary-accent-color: #FE8A1F;
+
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #000000;
+  --secondary-text-color-variant: #8B8B8B;
+
+  --primary-underline-color: #DADADA;
+  --secondary-underline-color: #424242;
+  --secondary-underline-color-variant: #AAAAAA;
+
+  --link-transition: opacity .2s linear;
+  --hovered-button-link-opacity: .8;
+  --hovered-text-link-opacity: .7;
+
+  --1280-resolution-padding: 70px;
+
+  --768-resolution-padding-50: 50px;
+  --768-resolution-padding-30: 30px;
+
+  --320-resolution-padding-14: 14px;
+  --320-resolution-padding-18: 18px;
+  --320-resolution-padding-footer: 10px;
+}

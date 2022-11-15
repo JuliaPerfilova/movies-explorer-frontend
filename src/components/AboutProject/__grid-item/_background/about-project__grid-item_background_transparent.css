@@ -1,0 +1,4 @@
+.about-project__grid-item_background_transparent {
+  background-color: transparent;
+  color: var(--secondary-text-color-variant)
+}

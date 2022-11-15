@@ -1,0 +1,22 @@
+.about-me__git-link {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--primary-text-color);
+  margin: 0;
+  padding: 100px 0 0;
+}
+
+@media screen and (max-width: 769px) {
+  .about-me__git-link {
+    padding: 63px 0 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-me__git-link {
+    padding: 56px 0 0;
+  }
+}

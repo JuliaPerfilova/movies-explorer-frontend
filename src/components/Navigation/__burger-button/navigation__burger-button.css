@@ -1,0 +1,13 @@
+.navigation__burger-button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .navigation__burger-button {
+    display: flex;
+  }
+}

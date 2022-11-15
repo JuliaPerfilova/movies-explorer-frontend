@@ -1,0 +1,21 @@
+.entry-page {
+  width: 100%;
+  max-width: 396px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 70px 0;
+}
+
+@media screen and (max-width: 769px) {
+  .entry-page {
+    padding: 232px 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .entry-page {
+    padding: 56px 0;  
+    max-width: 260px;
+  }
+}

@@ -1,0 +1,25 @@
+.techs__list-item {
+  width: 90px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bg-variant);
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: var(--primary-text-color);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 769px) {
+  .techs__list-item {
+    width: 84px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

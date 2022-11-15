@@ -1,0 +1,23 @@
+.loader {
+  width: 100%;
+  min-height: 166px;
+  background-color: var(--primary-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 50px var(--1280-resolution-padding) 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .loader {
+    padding: 50px var(--768-resolution-padding-30) 80px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .loader {
+    padding: 50px var(--320-resolution-padding-footer) 80px;
+  }
+}

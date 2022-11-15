@@ -1,0 +1,22 @@
+.search-form {
+  width: 100%;
+  min-height: 242px;
+  background-color: var(--primary-bg);
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 70px var(--1280-resolution-padding) 0;
+}
+
+@media screen and (max-width: 800px) {
+  .search-form {
+    padding: 70px var(--768-resolution-padding-30) 0;
+    min-height: 250px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .search-form {
+    padding: 70px var(--320-resolution-padding-14) 0;
+  }
+}

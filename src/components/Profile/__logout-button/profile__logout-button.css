@@ -1,0 +1,16 @@
+.profile__logout-button {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--secondary-accent-color);
+  background-color: transparent;
+  margin: 0;
+  padding: 16px 0 0;
+}
+
+@media screen and (max-width: 420px) {
+  .profile__logout-button {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

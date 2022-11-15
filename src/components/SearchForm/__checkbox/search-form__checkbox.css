@@ -1,0 +1,8 @@
+.search-form__checkbox {
+  width: 36px;
+  height: 20px;
+  background-image: url(../../../images/toggleOff.svg);
+  background-color: transparent;
+  cursor: pointer;
+  appearance: none;
+}

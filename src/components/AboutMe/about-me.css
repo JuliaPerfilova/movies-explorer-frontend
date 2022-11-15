@@ -1,0 +1,24 @@
+.about-me {
+  width: 100%;
+  min-height: 604px;
+  background-color: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 var(--1280-resolution-padding);
+}
+
+
+@media screen and (max-width: 769px) {
+  .about-me {
+    padding: 0 var(--768-resolution-padding-50);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-me {
+    padding: 0 var(--320-resolution-padding-14);
+    min-height: 975px;
+  }
+}

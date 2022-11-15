@@ -1,0 +1,22 @@
+.about-project {
+  width: 100%;
+  min-height: 608px;
+  box-sizing: border-box;
+  background-color: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--1280-resolution-padding);
+}
+
+@media screen and (max-width: 769px) {
+  .about-project {
+    padding: 0 var(--768-resolution-padding-50);
+    min-height: 585px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-project {
+    padding: 0 var(--320-resolution-padding-18);
+  }
+}

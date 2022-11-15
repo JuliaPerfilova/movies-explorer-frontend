@@ -1,0 +1,13 @@
+.about-me__student {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 66px 0 0;
+}
+
+@media screen and (max-width: 570px) {
+  .about-me__student {
+    flex-direction: column-reverse;
+    padding: 60px 0 0;
+  }
+}

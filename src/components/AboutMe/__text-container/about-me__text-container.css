@@ -1,0 +1,29 @@
+.about-me__text-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1080px) {
+  .about-me__text-container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about-me__text-container {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about-me__text-container {
+    max-width: 364px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .about-me__text-container {
+    max-width: 500px;
+  }
+}

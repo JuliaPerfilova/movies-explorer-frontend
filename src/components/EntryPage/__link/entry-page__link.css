@@ -1,0 +1,14 @@
+.entry-page__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--accent-color);
+  margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .entry-page__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

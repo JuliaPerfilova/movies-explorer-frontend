@@ -1,0 +1,8 @@
+.clickable-element_type_button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+.clickable-element_type_button:hover {
+  opacity: var(--hovered-button-link-opacity)
+}

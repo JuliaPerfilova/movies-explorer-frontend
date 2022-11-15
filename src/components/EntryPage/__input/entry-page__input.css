@@ -1,0 +1,17 @@
+.entry-page__input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--primary-text-color);
+  border-bottom: 1px solid var(--secondary-underline-color);
+  margin: 0;
+  padding: 5px 0 10px;
+}
+
+.entry-page__input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}

@@ -1,0 +1,10 @@
+.movie {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-bg);
+  width: 100%;
+  max-width: 360px;
+  max-height: 319px;
+  box-sizing: border-box;
+  margin: 0;
+}

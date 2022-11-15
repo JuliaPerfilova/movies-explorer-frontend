@@ -1,0 +1,8 @@
+.nothing-found__image {
+  width: 350px;
+  height: 350px;
+  background-image: url(../../../images/nothing-found.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

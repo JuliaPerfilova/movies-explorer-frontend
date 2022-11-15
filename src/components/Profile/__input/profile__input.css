@@ -1,0 +1,16 @@
+.profile__input {
+  max-width: 152px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: right;
+  color: var(--primary-text-color);
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+}
+
+.profile__input:focus {
+  outline: none;
+}

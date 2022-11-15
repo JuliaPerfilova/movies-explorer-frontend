@@ -1,0 +1,17 @@
+.about-project__grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 110px 0 0;
+}
+
+@media screen and (max-width: 769px) {
+  .about-project__grid {
+    padding: 93px 0 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-project__grid {
+    padding: 60px 0 0;
+  }
+}

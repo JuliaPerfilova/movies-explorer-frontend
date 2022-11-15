@@ -1,0 +1,14 @@
+.not-found__back-link {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 184px 0 0px;
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 420px) {
+  .not-found__back-link {
+    margin: 284px 0 0px;
+  }
+}
